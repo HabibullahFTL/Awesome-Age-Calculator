@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    height: 100vh;
+}
+.calc-container{
+    width: 400px;
+    height: 430px;
+    border: 2px solid rgb(240, 7, 170);
+    border-radius: 25px;
+    border-top: none;
+}
+h4{
+    font-size: 25px;
+    text-align: center;
+    background: linear-gradient(rgb(248, 94, 202) ,
+    rgb(230, 4, 162));
+    padding: 10px;
+    color: #fff;
+    border-radius: 22px 22px 0 0;
+}
+label{
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    display: block;
+    margin-left: 20px;
+    color: rgb(240, 21, 174);
+}
+.select{
+    margin-left: 20px;
+}
+select{
+    width: 100px;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: rgb(235, 10, 167);
+    border: 1px solid rgb(240, 7, 170);
+    font-weight: bold;
+    border-radius: 5px;
+}
+option{
+    padding: 10px;
+}
+input[type=submit]{
+    display: block;
+    padding: 15px 50px;
+    margin-top: 20px;
+    margin: 20px auto;
+    background: linear-gradient(rgb(248, 94, 202) ,
+    rgb(230, 4, 162));
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #fff;
+}
+input[type=submit]:hover{
+    background: #fff;
+    color: rgb(240, 7, 170);
+    border: 2px solid rgb(240, 7, 170);
+    cursor: pointer;
+}
+hr{
+    border-top: 2px solid rgb(240, 7, 170);
+}
+h5{
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    color: rgb(240, 7, 170);
+    border-radius: 22px 22px 0 0;
+    border-bottom: 2px dotted rgb(240, 7, 170);
+    width: 150px;
+    margin: auto;
+}
+#showAge{
+    color: rgb(240, 7, 170);
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+p{
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .calc-container{
+        color: red;
+    }
+}

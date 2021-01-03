@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator | Habibullah Bahar Piash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="monthListF()">
+    <div class="calc-container">
+        
+        <form action="#" id="ageCalculator">
+            <h4>Age Calculator</h4>
+            <label for="">Date of Birth:</label>
+            <div class="select">
+                <select id="dobMonthList" onchange="dobMonthListF()"></select>
+                <select id="dobDateList"></select>
+                <select id="dobYearList"></select>
+            </div>
+
+            <label for="">Age at the Date of:</label>
+            <div class="select">
+                <select id="nowMonthList" onchange="nowMonthListF()"></select>
+                <select id="nowDateList"></select>
+                <select id="nowYearList"></select>
+            </div>
+            <input type="submit" value="Calculate Age">
+            <hr>
+            <h5>Result</h5>
+            <div id="showAge"></div>
+        </form>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
